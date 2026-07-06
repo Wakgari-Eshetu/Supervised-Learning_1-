@@ -1,0 +1,22 @@
+Target Variable Analysis (SalePrice)
+
+The target variable SalePrice was thoroughly analyzed using statistical summary, visualizations, and distribution diagnostics.
+
+📊 Key findings:
+The distribution of SalePrice is strongly right-skewed (skewness = 1.88), indicating that most houses are priced in the lower range, with a small number of very high-value properties.
+The distribution is not normal, as confirmed by:
+Histogram (long right tail)
+Q–Q plot (significant deviation from the reference line)
+The dataset contains heavy tails (kurtosis = 6.53), showing the presence of extreme values (high-end luxury houses).
+A total of 61 outliers were detected, but they are likely valid real-world high-value properties rather than data errors.
+There are no missing values, ensuring data completeness for modeling.
+
+⚙️ Decision on Transformation:
+Based on the analysis:
+High skewness (1.88)
+Non-normal Q–Q plot behavior
+Heavy-tailed distribution
+Presence of valid extreme values
+Sensitivity of linear models to distribution shape
+
+👉 A log transformation is required for the target variable.
